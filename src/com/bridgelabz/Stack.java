@@ -33,5 +33,7 @@ public class Stack {
 			temp = temp.next;
 		}
 		
-	}
+    }
+
 }
+
