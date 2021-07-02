@@ -6,7 +6,8 @@ public class Stack {
 	class Node {
 		int data;
 		Node next;
-		public Node(int data) {
+		public Node(int data)
+		{
 			super();
 			this.data = data;
 			this.next = null;
@@ -15,7 +16,8 @@ public class Stack {
 	}
 	
 	//push method
-	public void push(int data) {		
+	public void push(int data)
+	{		
 		Node newNode = new Node(data);
 		newNode.next = top;
 		top = newNode;
@@ -26,9 +28,11 @@ public class Stack {
 	}
 	
 	//print method
-    public void print() {		
+    public void print() 
+    {		
 		Node temp = top;
-		while(temp != null) {
+		while(temp != null)
+		{
 			System.out.print(temp.data +  "-> ");
 			temp = temp.next;
 		}
