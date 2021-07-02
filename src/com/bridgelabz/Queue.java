@@ -17,7 +17,7 @@ public class Queue {
 		}
 
 	}
-		//add data into the Queue
+		//add data to the Queue
 	public void enQueue(int data) {
 		if (front == null) {
 			rear = new Node(data);
@@ -39,5 +39,15 @@ public class Queue {
 			temp = temp.next;
 		}
 
+	}
+	//Delete Data From Queue
+		public void deQueue() {
+			if (front != null) {
+				int temp = front.data;
+				front = front.next;
+				length--;
+				return;
+			}
+			
 	}
 }
