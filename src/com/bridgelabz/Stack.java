@@ -3,7 +3,8 @@ public class Stack {
 	Node top;
 	int size;
 
-	class Node {
+	class Node
+	{
 		int data;
 		Node next;
 		public Node(int data)
@@ -23,7 +24,6 @@ public class Stack {
 		top = newNode;
 
 		size++;
-
 
 	}
 	
